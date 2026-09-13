@@ -1,0 +1,22 @@
+/* src/styles/variables.css */
+
+/* Define Colors */
+:root {
+  --main-black: #000000;
+  --main-white: #ffffff;
+  --main-blue: #1649ff;
+  --main-blue-dark: #0336ec;
+  --text-gray: #cfcfcf;
+  --card-gray: #d9d9d9;
+  --card-gray-light: #efefef;
+  --dark-gray: #a2a5af;
+  --blue-one: #405398;
+  --blue-two: #4661c1;
+  --blue-three: #d2dcff;
+}
+
+/* Define Fonts */
+:root {
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "inter", sans-serif;
+}

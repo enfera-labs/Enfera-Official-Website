@@ -1,0 +1,60 @@
+/* src/styles/Navbar.css */
+
+@import "../styles/variables.css";
+
+.navbar {
+  background-color: var(--main-black);
+  height: 94px;
+  align-content: center;
+  user-select: none;
+}
+
+.navbar .contact-button {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  border-radius: 60px;
+  width: 167px;
+  height: 43px;
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .contact-button:hover {
+  background-color: var(--main-blue-dark);
+  border: 2px solid var(--main-white);
+}
+
+.navbar .logo .image {
+  width: 180px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 70px;
+}
+
+.navbar .menu-item {
+  color: var(--main-white);
+  transition: color 0.2s ease;
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.navbar .menu-item.active {
+  color: var(--main-blue);
+}
+
+.navbar .menu-item:hover {
+  border-bottom: 3px solid var(--main-blue);
+}
+
+.navbar .mobile-menu {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
