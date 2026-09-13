@@ -1,6 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiCheck, FiSearch, FiEdit3, FiCode, FiTrendingUp, FiPlay, FiX, FiMessageSquare, FiFacebook, FiLinkedin, FiInstagram, FiCalendar, FiPhone, FiMail } from "react-icons/fi";
+import {
+  FiCheck,
+  FiSearch,
+  FiEdit3,
+  FiCode,
+  FiTrendingUp,
+  FiPlay,
+  FiX,
+  FiMessageSquare,
+  FiFacebook,
+  FiLinkedin,
+  FiInstagram,
+  FiCalendar,
+  FiPhone,
+  FiMail,
+} from "react-icons/fi";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
@@ -27,12 +42,15 @@ import ProjectVideo1 from "../../assets/videos/snaptik_7598085830409817362_v3.mp
 import ProjectVideo2 from "../../assets/videos/snaptik_7623322430479666440_v3.mp4";
 import ProjectVideo3 from "../../assets/videos/snaptik_7657830247089310984_v3.mp4";
 
+import HeroImage from "../../assets/images/HeroImage.jpg";
+
 const recentProjects = [
   {
     id: 1,
     title: "Smart Dashboard",
     category: "Dashboard",
-    description: "Intelligent analytics dashboard providing real-time data visualization, automated workflows, and business insights.",
+    description:
+      "Intelligent analytics dashboard providing real-time data visualization, automated workflows, and business insights.",
     video: ProjectVideo1,
     tags: ["React", "Analytics", "Dashboard"],
   },
@@ -40,7 +58,8 @@ const recentProjects = [
     id: 2,
     title: "Modern Website",
     category: "Website",
-    description: "High-performance responsive website with dynamic interactive elements and modern UI/UX design.",
+    description:
+      "High-performance responsive website with dynamic interactive elements and modern UI/UX design.",
     video: ProjectVideo2,
     tags: ["React", "Tailwind", "Web Design"],
   },
@@ -48,7 +67,8 @@ const recentProjects = [
     id: 3,
     title: "Interactive Website",
     category: "Website",
-    description: "Feature-rich web platform designed for seamless user engagement and scalable digital performance.",
+    description:
+      "Feature-rich web platform designed for seamless user engagement and scalable digital performance.",
     video: ProjectVideo3,
     tags: ["UI/UX", "Vite", "Web Development"],
   },
@@ -67,13 +87,48 @@ export default function Home() {
 
   // Partner logos roster
   const partnerLogos = [
-    { name: "CAL", logo: CalLogo, isDark: false, imgClass: "max-h-16 max-w-[170px] object-contain" },
-    { name: "Looka", logo: LookaLogo, isDark: false, imgClass: "max-h-16 max-w-[170px] object-contain" },
-    { name: "NEXVA", logo: NexvaLogo, isDark: true, imgClass: "w-full h-full object-cover scale-115" },
-    { name: "ZYNEX", logo: ZynexLogo, isDark: true, imgClass: "w-full h-full object-contain p-3 scale-125" },
-    { name: "Diaspora Lanka", logo: DiasporaLankaLogo, isDark: false, imgClass: "max-h-20 max-w-[190px] object-contain scale-130" },
-    { name: "Sri Lankan Express", logo: SriLankanExpressLogo, isDark: true, imgClass: "w-full h-full object-contain p-2 scale-115" },
-    { name: "Lankan Taste", logo: LankanTasteLogo, isDark: true, imgClass: "w-full h-full object-contain p-2 scale-115" },
+    {
+      name: "CAL",
+      logo: CalLogo,
+      isDark: false,
+      imgClass: "max-h-16 max-w-[170px] object-contain",
+    },
+    {
+      name: "Looka",
+      logo: LookaLogo,
+      isDark: false,
+      imgClass: "max-h-16 max-w-[170px] object-contain",
+    },
+    {
+      name: "NEXVA",
+      logo: NexvaLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-cover scale-115",
+    },
+    {
+      name: "ZYNEX",
+      logo: ZynexLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-contain p-3 scale-125",
+    },
+    {
+      name: "Diaspora Lanka",
+      logo: DiasporaLankaLogo,
+      isDark: false,
+      imgClass: "max-h-20 max-w-[190px] object-contain scale-130",
+    },
+    {
+      name: "Sri Lankan Express",
+      logo: SriLankanExpressLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-contain p-2 scale-115",
+    },
+    {
+      name: "Lankan Taste",
+      logo: LankanTasteLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-contain p-2 scale-115",
+    },
   ];
 
   return (
@@ -84,7 +139,7 @@ export default function Home() {
       <div className="relative min-h-[90vh] sm:h-screen py-20 sm:py-0 flex items-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="src/assets/images/HeroImage.jpg"
+            src={HeroImage}
             alt="Digital Innovation"
             className="w-full h-full object-cover"
           />
@@ -141,7 +196,12 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8" />
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              At Enfera IT Solutions, we believe every successful business starts with a great idea. We partner with business owners to turn their vision into reality through customized software, AI automation, and digital solutions. From improving daily operations to supporting future growth, we provide the technology and guidance businesses need to grow smarter and faster.
+              At Enfera IT Solutions, we believe every successful business
+              starts with a great idea. We partner with business owners to turn
+              their vision into reality through customized software, AI
+              automation, and digital solutions. From improving daily operations
+              to supporting future growth, we provide the technology and
+              guidance businesses need to grow smarter and faster.
             </p>
           </div>
 
@@ -189,7 +249,8 @@ export default function Home() {
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6 rounded-full" />
                 <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                  We are proud to partner with forward-thinking companies and industry leaders to drive innovative results.
+                  We are proud to partner with forward-thinking companies and
+                  industry leaders to drive innovative results.
                 </p>
               </div>
 
@@ -199,7 +260,12 @@ export default function Home() {
                 <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-indigo-100/90 via-indigo-100/40 to-transparent z-10" />
 
                 <div className="animate-marquee flex gap-8 items-center">
-                  {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((partner, index) => (
+                  {[
+                    ...partnerLogos,
+                    ...partnerLogos,
+                    ...partnerLogos,
+                    ...partnerLogos,
+                  ].map((partner, index) => (
                     <div
                       key={index}
                       className={`group rounded-xl border shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center min-w-[210px] h-28 cursor-pointer overflow-hidden relative ${
@@ -240,13 +306,13 @@ export default function Home() {
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6 rounded-full" />
                 <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-                  A clear, four-stage approach that turns your goals into a digital solution that performs — and keeps performing.
+                  A clear, four-stage approach that turns your goals into a
+                  digital solution that performs — and keeps performing.
                 </p>
               </div>
 
               {/* Purple-Blue Mix Low-Glass 4-Card Process Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                
                 {/* 01 Discover Card */}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
@@ -269,7 +335,8 @@ export default function Home() {
                       Discover
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base relative z-10">
-                      Understanding your business, goals, and challenges before building the right digital solution.
+                      Understanding your business, goals, and challenges before
+                      building the right digital solution.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-indigo-100 flex items-center gap-2 text-xs font-bold text-indigo-600 uppercase tracking-wider">
@@ -301,7 +368,8 @@ export default function Home() {
                       Design
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base relative z-10">
-                      Creating modern UI/UX experiences and strategic solution architecture tailored to your brand.
+                      Creating modern UI/UX experiences and strategic solution
+                      architecture tailored to your brand.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-purple-100 flex items-center gap-2 text-xs font-bold text-purple-600 uppercase tracking-wider">
@@ -333,7 +401,8 @@ export default function Home() {
                       Develop
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base relative z-10">
-                      Building high-performance websites, applications, AI solutions, and custom software with modern technologies.
+                      Building high-performance websites, applications, AI
+                      solutions, and custom software with modern technologies.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-indigo-100 flex items-center gap-2 text-xs font-bold text-indigo-600 uppercase tracking-wider">
@@ -365,7 +434,8 @@ export default function Home() {
                       Grow
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base relative z-10">
-                      Helping your business scale with SEO, digital marketing, automation, and continuous technical support.
+                      Helping your business scale with SEO, digital marketing,
+                      automation, and continuous technical support.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-purple-100 flex items-center gap-2 text-xs font-bold text-purple-600 uppercase tracking-wider">
@@ -374,14 +444,12 @@ export default function Home() {
                     <span>Scaling</span>
                   </div>
                 </motion.div>
-
               </div>
             </div>
           </div>
 
           {/* Services Section */}
           <section id="services" className="py-10">
-
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Our{" "}
@@ -438,7 +506,8 @@ export default function Home() {
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6 rounded-full" />
                 <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-                  Explore some of our latest digital transformations, custom web applications, and AI-driven solutions built for performance.
+                  Explore some of our latest digital transformations, custom web
+                  applications, and AI-driven solutions built for performance.
                 </p>
               </div>
 
@@ -463,7 +532,7 @@ export default function Home() {
                         playsInline
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
-                      
+
                       {/* Dark Gradient Overlay for text readability */}
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-black/40 pointer-events-none" />
 
@@ -477,7 +546,10 @@ export default function Home() {
                       {/* Center Play Button Overlay */}
                       <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
                         <div className="w-16 h-16 rounded-full bg-blue-600/90 text-white flex items-center justify-center shadow-2xl group-hover:scale-115 group-hover:bg-blue-500 transition-all duration-300 border-2 border-white/40 backdrop-blur-md">
-                          <FiPlay size={26} className="ml-1 text-white fill-white" />
+                          <FiPlay
+                            size={26}
+                            className="ml-1 text-white fill-white"
+                          />
                         </div>
                       </div>
                     </div>
@@ -606,7 +678,9 @@ export default function Home() {
 
                   {/* Subtitle / Paragraph */}
                   <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl">
-                    From local startups to businesses overseas, we've partnered with 50+ clients in 5+ countries — delivering digital solutions that work no matter where you're based.
+                    From local startups to businesses overseas, we've partnered
+                    with 50+ clients in 5+ countries — delivering digital
+                    solutions that work no matter where you're based.
                   </p>
 
                   {/* CTA Buttons & Social Icons Row */}
@@ -616,7 +690,10 @@ export default function Home() {
                       to="/contact"
                       className="px-7 py-3.5 rounded-full bg-[#0a0f1d] hover:bg-blue-600 text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-blue-500/25 flex items-center gap-2.5 group"
                     >
-                      <FiMessageSquare size={18} className="group-hover:rotate-12 transition-transform" />
+                      <FiMessageSquare
+                        size={18}
+                        className="group-hover:rotate-12 transition-transform"
+                      />
                       <span>Contact Us</span>
                     </Link>
 
@@ -720,7 +797,6 @@ export default function Home() {
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
             {/* Left Content Column */}
             <div className="lg:col-span-7 text-left space-y-6">
               {/* Sub-badge */}
@@ -735,7 +811,8 @@ export default function Home() {
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-blue-100 leading-relaxed max-w-xl">
-                Book a free 30-minute strategy call. We'll review your goals and show you exactly how we'd help.
+                Book a free 30-minute strategy call. We'll review your goals and
+                show you exactly how we'd help.
               </p>
 
               {/* Action Buttons Row */}
@@ -770,7 +847,10 @@ export default function Home() {
                     <span className="text-[10px] font-bold text-blue-200 tracking-wider uppercase block">
                       HOTLINE
                     </span>
-                    <a href="tel:+94767200962" className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition block truncate">
+                    <a
+                      href="tel:+94767200962"
+                      className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition block truncate"
+                    >
                       +94 767 200 962
                     </a>
                   </div>
@@ -785,7 +865,10 @@ export default function Home() {
                     <span className="text-[10px] font-bold text-blue-200 tracking-wider uppercase block">
                       EMAIL US
                     </span>
-                    <a href="mailto:info@enfera.lk" className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition truncate block">
+                    <a
+                      href="mailto:info@enfera.lk"
+                      className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition truncate block"
+                    >
                       info@enfera.lk
                     </a>
                   </div>
@@ -800,7 +883,12 @@ export default function Home() {
                     <span className="text-[10px] font-bold text-blue-200 tracking-wider uppercase block">
                       WHATSAPP 24/7
                     </span>
-                    <a href="https://wa.me/94707200962" target="_blank" rel="noreferrer" className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition block truncate">
+                    <a
+                      href="https://wa.me/94707200962"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white font-bold text-xs sm:text-sm hover:text-blue-200 transition block truncate"
+                    >
                       +94 707 200 962
                     </a>
                   </div>
@@ -817,14 +905,13 @@ export default function Home() {
             >
               {/* Background Soft Glow */}
               <div className="absolute w-72 h-72 bg-blue-300/30 rounded-full blur-3xl pointer-events-none" />
-              
+
               <img
                 src={AssistantImg}
                 alt="Enfera Assistant"
                 className="w-full max-w-sm lg:max-w-md h-auto object-contain relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </motion.div>
-
           </div>
         </div>
       </section>
