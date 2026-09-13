@@ -37,12 +37,11 @@ import ZynexLogo from "../../assets/images/zynex-logo.jpg";
 import DiasporaLankaLogo from "../../assets/images/diaspora-lanka.png";
 import SriLankanExpressLogo from "../../assets/images/srilankan-express.png";
 import LankanTasteLogo from "../../assets/images/lankan-taste.jpg";
+import HeroImage from "../../assets/images/HeroImage.jpg";
 
 import ProjectVideo1 from "../../assets/videos/snaptik_7598085830409817362_v3.mp4";
 import ProjectVideo2 from "../../assets/videos/snaptik_7623322430479666440_v3.mp4";
 import ProjectVideo3 from "../../assets/videos/snaptik_7657830247089310984_v3.mp4";
-
-import HeroImage from "../../assets/images/HeroImage.jpg";
 
 const recentProjects = [
   {
