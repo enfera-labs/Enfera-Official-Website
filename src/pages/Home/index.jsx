@@ -30,13 +30,15 @@ import WorldMapGraphic from "../../components/WorldMapGraphic";
 import AssistantImg from "../../assets/images/Assistant.png";
 import Client1 from "../../assets/images/PH2VQ26FQVEXPF3BKILGSEITSQ.jpg";
 import Client2 from "../../assets/images/download (2).jpg";
-import CalLogo from "../../assets/images/cal-logo.jpg";
-import LookaLogo from "../../assets/images/looka-logo.jpg";
-import NexvaLogo from "../../assets/images/nexva-logo.jpg";
-import ZynexLogo from "../../assets/images/zynex-logo.jpg";
-import DiasporaLankaLogo from "../../assets/images/diaspora-lanka.png";
+import GaminiMotorsLogo from "../../assets/images/gamini-motors.png";
+import DELogo from "../../assets/images/de-logo.png";
+import NextGenLogo from "../../assets/images/next-gen.jpg";
 import SriLankanExpressLogo from "../../assets/images/srilankan-express.png";
-import LankanTasteLogo from "../../assets/images/lankan-taste.jpg";
+import StudentHubLogo from "../../assets/images/student-hub.png";
+import IdeaBindLogo from "../../assets/images/ideabind.png";
+import ToonFrameLogo from "../../assets/images/toon-frame.png";
+import SCrossLogo from "../../assets/images/s-cross.png";
+import ArcticTechLogo from "../../assets/images/arctic-technologies.png";
 import HeroImage from "../../assets/images/HeroImage.jpg";
 
 import ProjectVideo1 from "../../assets/videos/snaptik_7598085830409817362_v3.mp4";
@@ -87,46 +89,58 @@ export default function Home() {
   // Partner logos roster
   const partnerLogos = [
     {
-      name: "CAL",
-      logo: CalLogo,
+      name: "Bajaj Gamini Motors",
+      logo: GaminiMotorsLogo,
       isDark: false,
-      imgClass: "max-h-16 max-w-[170px] object-contain",
+      imgClass: "max-h-20 max-w-[185px] object-contain scale-115",
     },
     {
-      name: "Looka",
-      logo: LookaLogo,
-      isDark: false,
-      imgClass: "max-h-16 max-w-[170px] object-contain",
-    },
-    {
-      name: "NEXVA",
-      logo: NexvaLogo,
+      name: "IdeaBind",
+      logo: IdeaBindLogo,
       isDark: true,
-      imgClass: "w-full h-full object-cover scale-115",
+      imgClass: "w-full h-full object-cover scale-105",
     },
     {
-      name: "ZYNEX",
-      logo: ZynexLogo,
-      isDark: true,
-      imgClass: "w-full h-full object-contain p-3 scale-125",
-    },
-    {
-      name: "Diaspora Lanka",
-      logo: DiasporaLankaLogo,
+      name: "Student Hub",
+      logo: StudentHubLogo,
       isDark: false,
-      imgClass: "max-h-20 max-w-[190px] object-contain scale-130",
+      imgClass: "max-h-20 max-w-[185px] object-contain scale-115",
     },
     {
-      name: "Sri Lankan Express",
+      name: "Toon Frame",
+      logo: ToonFrameLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-cover scale-105",
+    },
+    {
+      name: "Arctic Technologies",
+      logo: ArcticTechLogo,
+      isDark: false,
+      imgClass: "max-h-20 max-w-[185px] object-contain scale-115",
+    },
+    {
+      name: "Next Gen",
+      logo: NextGenLogo,
+      isDark: true,
+      imgClass: "w-full h-full object-contain p-2 scale-110",
+    },
+    {
+      name: "Health Plus",
+      logo: SCrossLogo,
+      isDark: false,
+      imgClass: "max-h-20 max-w-[180px] object-contain scale-115",
+    },
+    {
+      name: "Sri Lankan Express Restaurant",
       logo: SriLankanExpressLogo,
       isDark: true,
       imgClass: "w-full h-full object-contain p-2 scale-115",
     },
     {
-      name: "Lankan Taste",
-      logo: LankanTasteLogo,
-      isDark: true,
-      imgClass: "w-full h-full object-contain p-2 scale-115",
+      name: "DE",
+      logo: DELogo,
+      isDark: false,
+      imgClass: "max-h-22 max-w-[175px] object-contain scale-120 rounded-lg",
     },
   ];
 
@@ -270,7 +284,7 @@ export default function Home() {
                       className={`group rounded-xl border shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center min-w-[210px] h-28 cursor-pointer overflow-hidden relative ${
                         partner.isDark
                           ? "bg-slate-950 border-slate-800 hover:border-blue-500/50 p-0"
-                          : "bg-white border-gray-200/80 hover:border-blue-400 px-8 py-4"
+                          : "bg-white border-gray-200/80 hover:border-blue-400 px-5 py-2.5"
                       }`}
                     >
                       <img
